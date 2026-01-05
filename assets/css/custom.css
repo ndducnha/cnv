@@ -1,0 +1,157 @@
+/* CNV Custom Styles */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A8FDC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E5F8A;
+}
+
+/* Swiper Custom Styles */
+.heroSwiper .swiper-button-prev,
+.heroSwiper .swiper-button-next {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.heroSwiper .swiper-button-prev:after,
+.heroSwiper .swiper-button-next:after {
+  font-size: 20px;
+}
+
+.heroSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 0.5;
+}
+
+.heroSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #F5841F;
+}
+
+.certificationsSwiper .swiper-pagination-bullet {
+  background: #0A8FDC;
+}
+
+/* Header Scroll Effect */
+.header-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Line Clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Dropdown Animation */
+.group:hover .group-hover\:visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Mobile Menu Animation */
+#mobileMenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#mobileMenu.active {
+  max-height: 500px;
+}
+
+/* Back to Top Button */
+#backToTop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Form Styles */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #0A8FDC;
+  box-shadow: 0 0 0 3px rgba(10, 143, 220, 0.1);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #0A8FDC 0%, #F5841F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Partner Logo Hover */
+.partner-logo {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header,
+  footer,
+  #backToTop {
+    display: none;
+  }
+}
